@@ -14,7 +14,6 @@ export default function Header() {
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				// Assuming the response includes the file URL
 				const { fileUrl } = data;
 				window.open(fileUrl);
 			})
